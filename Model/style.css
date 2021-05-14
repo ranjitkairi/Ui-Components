@@ -1,0 +1,21 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #88a5ee;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.main {
+  background: #ebf3fb;
+  
+}
