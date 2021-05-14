@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=New+Rocker&display=swap");
 *,
 *::after,
 ::before {
@@ -9,13 +10,177 @@
 body {
   background: #88a5ee;
   /* display: flex; */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 100vh;
+  padding: 5rem;
+  margin: auto;
 }
 
 .main {
+  /* display: flex; */
   background: #ebf3fb;
-  
+  width: 40%;
+  height: 80vh;
+  padding: 3rem;
+  margin: auto;
+  line-height: 2.5rem;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+}
+
+.main:first-of-type {
+  border-bottom: 10px solid #308392;
+}
+
+.top,
+.icon a {
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: "New Rocker", cursive;
+  text-align: start;
+  padding-top: 1.6rem;
+}
+
+.middle {
+  justify-content: space-between;
+}
+
+.middle,
+.link a {
+  text-decoration: none;
+  color: black;
+  padding-top: 1.6rem;
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
+
+.model {
+  justify-content: space-between;
+  padding-top: 1.2rem;
+  align-items: center;
+}
+.share {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+  color: #b4b4bc;
+}
+
+.share:hover {
+  color: black;
+}
+
+.btn {
+  background: #171e35;
+  color: white;
+  border: 1px solid black;
+  padding: 0.7rem 2rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: teal;
+}
+
+.middle small {
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #88a5ee;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    margin: auto;
+  }
+
+  .main {
+    /* display: flex; */
+    background: #ebf3fb;
+    width: 40%;
+    height: 80vh;
+    padding: 3rem;
+    margin: auto;
+    line-height: 2.5rem;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .main:first-of-type {
+    border-bottom: 10px solid #308392;
+  }
+
+  .top,
+  .icon a {
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  h3 {
+    font-family: "New Rocker", cursive;
+    text-align: start;
+    padding-top: 1.6rem;
+  }
+
+  .middle {
+    justify-content: space-between;
+  }
+
+  .middle,
+  .link a {
+    text-decoration: none;
+    color: black;
+    padding-top: 1.6rem;
+    margin: auto;
+    border-bottom: 1px solid #000;
+  }
+
+  .model {
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    align-items: center;
+  }
+  .share {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    color: #b4b4bc;
+  }
+
+  .share:hover {
+    color: black;
+  }
+
+  .btn {
+    background: #171e35;
+    color: white;
+    border: 1px solid black;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    background: teal;
+  }
+
+  .middle small {
+    margin: auto;
+    border-bottom: 1px solid #000;
+  }
 }
