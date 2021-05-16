@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #24244c;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: #f8fafe;
+  justify-content: space-between;
+  display: flex;
+  width: 78%;
+  height: 90vh;
+  border-radius: 10px;
+  /* line-height: 2rem; */
+  padding: 50px;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.teal {
+  background: linear-gradient(#f8fafe, #bfc1c3);
+}
+
+.purple {
+  background: linear-gradient(#c2cdff, #b47afe);
+}
+
+.pink {
+  background: linear-gradient(#ffb2bf, #ffc976);
+}
+
+.card-body {
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  font-size: 1.8rem;
+  color: #433f63;
+}
+
+h3::before {
+  font-family: "Pattaya", sans-serif;
+  content: "\0024";
+  font-size: 1rem;
+  position: absolute;
+  top: -0.3rem;
+  left: 2.4rem;
+}
+
+small {
+  font-family: "Pattaya", sans-serif;
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 0.8rem;
+  color: #433f63;
+}
+
+p {
+  font-size: 0.7rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.card .btn {
+  border: 1px solid #27264b;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  color: #27264b;
+}
+
+.btn-main {
+  background-color: #27264b;
+  color: white !important;
+}
+
+ul {
+  list-style: none;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  color: #433f63;
+}
+
+ul li {
+  position: relative;
+  padding-left: 0.1rem;
+}
+
+ul li::before {
+  content: "\2713";
+  position: absolute;
+  left: -1.2rem;
+  color: #7cbc84;
+  font-size: 1.5rem;
+}
+
+.ul .uncheck::before {
+  content: "\292C";
+  position: absolute;
+  left: -1.2rem;
+  color: tomato;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 786px) {
+  body {
+    background-color: #24244c;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .container {
+    background: #f8fafe;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+    border-radius: 10px;
+    /* line-height: 2rem; */
+    padding: 10px;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    cursor: pointer;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .teal {
+    background: linear-gradient(#f8fafe, #bfc1c3);
+  }
+
+  .purple {
+    background: linear-gradient(#c2cdff, #b47afe);
+  }
+
+  .pink {
+    background: linear-gradient(#ffb2bf, #ffc976);
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  h3 {
+    position: relative;
+    font-size: 1.8rem;
+    color: #433f63;
+  }
+
+  h3::before {
+    font-family: "Pattaya", sans-serif;
+    content: "\0024";
+    font-size: 1rem;
+    position: absolute;
+    top: -0.3rem;
+    left: 2.4rem;
+  }
+
+  small {
+    font-family: "Pattaya", sans-serif;
+    font-size: 10px;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    color: #433f63;
+  }
+
+  p {
+    font-size: 0.7rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .card .btn {
+    border: 1px solid #27264b;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    color: #27264b;
+  }
+
+  .btn-main {
+    background-color: #27264b;
+    color: white !important;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    color: #433f63;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 0.1rem;
+  }
+
+  ul li::before {
+    content: "\2713";
+    position: absolute;
+    left: -1.2rem;
+    color: #7cbc84;
+    font-size: 1.5rem;
+  }
+
+  .ul .uncheck::before {
+    content: "\292C";
+    position: absolute;
+    left: -1.2rem;
+    color: tomato;
+    font-size: 1.2rem;
+  }
+}
