@@ -127,15 +127,15 @@ span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding-top: 2rem;
     margin: 0;
   }
   .container {
     background: #ebebfb;
-    width: 68%;
-    /* height: 90vh; */
-    min-height: 80vh;
-    padding: 3rem;
+    width: 92%;
+    height: auto;
+    padding: 0.2rem;
     border-radius: 10px;
   }
 
@@ -152,12 +152,12 @@ span {
     align-items: center;
     text-align: center;
     border: 1px solid rgb(155, 148, 148);
-    padding: 0.6rem 2rem;
+    padding: 0.3rem 1rem;
     border-radius: 5px;
   }
   .lang {
     background: #bdb1ed;
-    padding: 0.6rem 3rem;
+    padding: 0.3rem 1.9rem;
     border-radius: 5px;
   }
 
@@ -171,7 +171,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 2.2rem;
+    line-height: 3rem;
     font-size: 0.8rem;
     padding: 2rem;
   }
@@ -225,7 +225,7 @@ span {
     text-decoration: none;
     background: #4d3b97;
     border: 1px solid #858494;
-    padding: 0.3rem 1.2rem;
+    padding: 0.2rem 1rem;
     color: #ebebfb;
     border-radius: 3px;
   }
