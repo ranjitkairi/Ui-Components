@@ -20,25 +20,56 @@
         </p>
       </div>
       <div class="right">
-        <span>Select gift frequency</span>
-        <div class="btn-btn">
-          <a class="btn1" href="#">Monthly</a> &nbsp; &nbsp;
-          <a class="btn2" href="#">One time</a>
+        <h3>Select gift frequency</h3>
+        <div class="donation-type">
+          <label for="monthly" class="monthly">
+            <input type="radio" name="donation-type" id="monthly" checked />
+            <span class="donation">Monthly</span>
+          </label>
+          <label for="onetime" class="onetime">
+            <input type="radio" name="donation-type" id="onetime" />
+            <span class="donation">Onetime</span>
+          </label>
         </div>
-        <small>Select amount (in us dollar)</small>
-        <div class="dollar">
-          <i>$10</i>
-          <i>$20</i>
-          <p class="dl">$30</p>
-          <i>$40</i>
-          <i>other</i>
+        <div class="dollar-type">
+          <small>Select amount (in us dollar)</small>
+          <br />
+          <label for="$10" class="$10">
+            <input type="radio" name="dollar-type" id="$10" />
+            <span class="dollar">$10</span>
+          </label>
+          <label for="$20" class="$20">
+            <input type="radio" name="dollar-type" id="$20" />
+            <span class="dollar">$20</span>
+          </label>
+          <label for="$30" class="$30">
+            <input type="radio" name="dollar-type" id="$30" />
+            <span class="dollar">$30</span>
+          </label>
+          <label for="$40" class="$40">
+            <input type="radio" name="dollar-type" id="$40" />
+            <span class="dollar">$40</span>
+          </label>
+          <label for="other" class="other">
+            <input type="radio" name="dollar-type" id="other" />
+            <span class="dollar">other</span>
+          </label>
+
+          <div class="checkbox-type">
+            <input type="checkbox" name="checkbox-type" id="checkbox" checked />
+            <span class="checkbox"
+              >Yes i'll generously add $0.75 each month to cover <br />
+              the transaction fees..</span
+            >
+          </div>
         </div>
-        <div class="check">
-            <input type="checkbox" name="#" id="#" /><p>
-          Yes i'll generously add $0.75 each month to cover <br />
-          the transaction fees..
-        </p>
+        <div class="input-type">
+          <label for="name">Name</label><br />
+          <input type="text" placeholder="Enter your name" />
+          <br />
+          <small class="Click">Click here to give in honor of other person</small>
         </div>
+        <button type="Donate now">Donate now</button>
       </div>
     </div>
   </body>
