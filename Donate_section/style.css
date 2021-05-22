@@ -129,12 +129,59 @@ body {
 
 .right .dollar-type .checkbox-type {
   width: 100%;
-  padding-top: 1rem;
-  line-height: 0.6rem;
+  margin-top: 20px;
+  position: relative;
+  line-height: 1.1;
+}
+
+.right .dollar-type .checkbox-type input {
+  display: none;
 }
 
 .right .dollar-type .checkbox-type .checkbox {
+  margin-left: 30px;
   font-size: 0.6rem;
+}
+
+.right .dollar-type .checkbox-type input:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.right .dollar-type .checkbox-type label {
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  border-radius: 4px;
+  background: #2f2f4f;
+  border: 1px solid #21213b;
+}
+
+.right .dollar-type .checkbox-type label::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.right .dollar-type .checkbox-type label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
 }
 
 .right .input-type {
@@ -153,7 +200,10 @@ body {
   border: 1px solid #21213b;
   border-radius: 5px;
   font-size: 0.7rem;
-  padding: 0.8rem 4rem;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
 }
 
 .right .input-type .Click {
@@ -199,8 +249,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
-    height: 65vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 96%;
+    height: auto;
     margin: 0;
   }
   .left {
@@ -283,11 +337,53 @@ body {
   }
   .right .dollar-type .checkbox-type {
     width: 100%;
-    padding-top: 1rem;
-    line-height: 0.6rem;
+    margin-top: 20px;
+    position: relative;
+    line-height: 1.1;
+  }
+  .right .dollar-type .checkbox-type input {
+    display: none;
   }
   .right .dollar-type .checkbox-type .checkbox {
+    margin-left: 30px;
     font-size: 0.6rem;
+  }
+  .right .dollar-type .checkbox-type input:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+  }
+  .right .dollar-type .checkbox-type label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    border-radius: 4px;
+    background: #2f2f4f;
+    border: 1px solid #21213b;
+  }
+  .right .dollar-type .checkbox-type label::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .right .dollar-type .checkbox-type label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
   }
   .right .input-type {
     padding-top: 1rem;
@@ -303,7 +399,7 @@ body {
     border: 1px solid #21213b;
     border-radius: 5px;
     font-size: 0.7rem;
-    padding: 0.8rem 4rem;
+    padding-left: 0.5rem;
   }
   .right .input-type .Click {
     color: #5768bc;
