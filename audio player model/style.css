@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #cbcbe0;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.main {
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 40%;
+  height: 48vh;
+  padding: 3rem;
+}
+
+h2 {
+  font-family: "Pattaya", sans-serif;
+  line-height: 3rem;
+}
+
+p {
+  line-height: 1rem;
+  font-size: 0.7rem;
+}
+
+.audio {
+  padding-top: 2rem;
+  padding-left: 0.3rem;
+}
+
+.button {
+  padding-top: 2rem;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #191248;
+  background: #191248;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 0.7rem 1rem;
+}
+
+.button,
+small {
+  align-items: center;
+  text-align: center;
+  font-size: 0.6rem;
+  gap: 1.3rem;
+}
